@@ -166,8 +166,13 @@
             font-size: 18px;
             margin-top: 20px; /* Space above the button */
         }
+
+        .g-recaptcha {
+            margin-top: 20px;
+        }
     </style>
     <title>NoobZ</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- Google reCAPTCHA script -->
 </head>
 <body>
     <header>
@@ -195,7 +200,9 @@
     <section id="supported-games" class="section supported-games">
         <h2>Supported Games</h2>
         <ul>
-            <li>None yet lol</li>
+            <li>Arsenal</li>
+            <li>BedWars</li>
+            <li>Prison Life</li>
         </ul>
     </section>
 
@@ -204,7 +211,7 @@
         <button class="discord-button">
             <i class="fab fa-discord"></i> <!-- Discord icon -->
         </button>
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> <!-- reCAPTCHA widget -->
     </section>
 </body>
-  </html>
-  
+</html>
